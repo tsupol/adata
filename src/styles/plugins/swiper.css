@@ -1,0 +1,13 @@
+.swiper-zoom-container>img {
+    /*width: auto;*/
+    /*height: 100%;*/
+    /*object-fit: cover;*/
+    /*object-position: center;*/
+}
+
+.swiper-zoom-container.fit-height>img {
+    /*width: 1rem;*/
+    /*height: 1rem;*/
+    /*object-fit: cover;*/
+    /*object-position: center;*/
+}

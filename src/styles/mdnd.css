@@ -1,0 +1,67 @@
+.mdnd-item {
+    outline: none;
+    position: relative;
+    border: 1px solid var(--border-color);
+}
+
+.mdnd-item.entered {
+    outline: 2px solid #ff0088;
+}
+
+.mdnd-inner {
+}
+
+.mdnd-inner::before, .mdnd-inner::after {
+    content: ' ';
+    height: 0;
+    display: block;
+    transition: height .25s;
+    background: #00b3ff;
+    width: 100%;
+}
+
+.entered:not(.mdnd-container) .mdnd-inner {
+    /*padding-top: 24px;*/
+}
+
+.entered:not(.mdnd-container).move-top .mdnd-inner::before {
+    height: 24px;
+}
+
+.entered:not(.mdnd-container).move-bottom .mdnd-inner::after {
+    height: 24px;
+}
+
+
+/*------------------------------------------------------------------
+ DND Masonry
+-------------------------------------------------------------------*/
+
+.mdnd-placeholder {
+    border: 1px solid var(--color-primary);
+    border-radius: 6px;
+}
+
+/* custom */
+.dnd-img-container, .mdnd-placeholder, .mdnd-move-container {
+    aspect-ratio: 1/1;
+    width: 100%;
+    /*width: calc(100% / 3);*/
+}
+
+.mdnd-move-container .dnd-img-container {
+    width: 100%;
+}
+
+.mdnd-item-close {
+    background: var(--color-danger);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    line-height: 21px;
+    text-align: center;
+    z-index: 2;
+}

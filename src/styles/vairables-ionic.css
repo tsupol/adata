@@ -1,0 +1,52 @@
+:root {
+    /*------------------------------------------------------------------
+      Ionic Variables and Theming. For more info, please see:
+      http://ionicframework.com/docs/theming/
+     -------------------------------------------------------------------*/
+
+    /** primary **/
+    --ion-color-primary: var(--color-primary);
+    --ion-color-primary-contrast: var(--color-primary-contrast);
+
+    /** secondary **/
+    --ion-color-secondary: var(--color-secondary);
+    --ion-color-secondary-contrast: var(--color-secondary-contrast);
+
+    /** tertiary **/
+    --ion-color-tertiary: var(--color-tertiary);
+    --ion-color-tertiary-contrast: var(--color-tertiary-contrast);
+
+    /** success **/
+    --ion-color-success: var(--color-success);
+    --ion-color-success-contrast: var(--color-success-contrast);
+
+    /** warning **/
+    --ion-color-warning: var(--color-warning);
+    --ion-color-warning-contrast: var(--color-warning-contrast);
+
+    /** danger **/
+    --ion-color-danger: var(--color-danger);
+    --ion-color-danger-contrast: var(--color-warning-contrast);
+
+    /** dark **/
+    --ion-color-dark: var(--color-dark);
+    --ion-color-dark-contrast: var(--color-dark-contrast);
+
+    /** medium **/
+    --ion-color-medium: var(--color-medium);
+    --ion-color-medium-contrast: var(--color-medium-contrast);
+
+    /** light **/
+    --ion-color-light: var(--color-light);
+    --ion-color-light-contrast: var(--color-light-contrast);
+
+    /** font **/
+    --ion-text-color: var(--text-color);
+    --ion-font-default: var(--font-default);
+    --ion-font-light: var(--font-light);
+    --ion-font-bold: var(--font-bold);
+
+    /** toolbar **/
+    --ion-toolbar-background: linear-gradient(90deg, #4053A2 0%, #2C3A71 100%);
+    --ion-toolbar-color: white;
+}

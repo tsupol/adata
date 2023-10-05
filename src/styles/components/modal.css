@@ -1,0 +1,158 @@
+.modal-content-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: .05rem;
+    padding-top: 1rem;
+    padding-bottom: 1.1rem;
+    background: rgba(0, 0, 0, .2);
+}
+
+.modal-center-keyboard {
+    --width: fit-content;
+    --min-width: 250px;
+    --height: fit-content;
+    --border-radius: 0px;
+    --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+    color: var(--ion-text-color);
+}
+
+/*------------------------------------------------------------------
+ Modal Parts
+-------------------------------------------------------------------*/
+.modal-toolbar {
+    display: flex;
+    align-items: center;
+    height: var(--nav-h);
+    background: var(--nav-bg);
+    box-shadow: var(--shadow-md-vivid);
+}
+
+
+.modal-toolbar-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: var(--nav-h);
+}
+
+@media screen and (max-width: 639px) {
+    .modal-page {
+        height: 100vh !important;
+        width: 100vw !important;
+    }
+}
+
+.modal-header {
+    font-size: 1.2rem;
+    font-weight: var(--modal-header-font-weight);
+    background: var(--modal-header-bg);
+    color: var(--modal-header-color);
+    border-bottom: var(--modal-header-border-b);
+    padding: var(--modal-header-p);
+    flex-grow: 0;
+}
+
+.modal-content {
+    padding: var(--modal-content-p);
+    flex-shrink: 1;
+    overflow: auto;
+}
+
+.modal-footer {
+    background: var(--modal-footer-bg);
+    border-top: var(--modal-footer-border-t);
+    padding: var(--modal-footer-p);
+    flex-grow: 0;
+    display: flex;
+}
+
+.modal-inner {
+    max-height: 100vh;
+    width: 100vw;
+    /*max-height: 400px;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content-wrap {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+/*------------------------------------------------------------------
+ My Own Modal
+-------------------------------------------------------------------*/
+
+.modal-portal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: var(--modal-z);
+}
+
+.modal-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: var(--modal-z);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    box-shadow: var(--modal-shadow);
+    background: var(--modal-bg);
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------------------------------------------------------------
+ Popover Replacement
+-------------------------------------------------------------------*/
+
+.backdrop {
+    background: var(--backdrop-bg);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: opacity .15s;
+    z-index: 0;
+}
+
+.backdrop.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popover-content {
+    background: var(--select-options-bg);
+    border: 1px solid red;
+}
+
+/*------------------------------------------------------------------
+ Drawer
+-------------------------------------------------------------------*/
+
+.drawer-container {
+    box-shadow: var(--modal-shadow);
+    background: var(--modal-bg);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s;
+}

@@ -1,0 +1,76 @@
+@media screen and (min-width: 768px) {
+    .address-form {
+        display: grid;
+        grid-column-gap: 24px;
+        grid-template:
+            'first_name last_name'
+            'phone email'
+            'street_address street_address'
+            'extended_address extended_address'
+            'city region'
+            'postal_code country'
+            'save_address save_address';
+    }
+}
+
+.ext-table .custom-form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+}
+
+/** reward **/
+
+.reward-rules-form {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+}
+.reward-rules-form h4 {
+    text-transform: capitalize;
+    margin: .5rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.reward-rules-form h3 {
+    text-transform: capitalize;
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.reward-rules-form h2 {
+    text-transform: capitalize;
+    padding: .5rem 1rem;
+    display: inline-block;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: .75rem;
+    color: var(--color-primary-contrast);
+    background: var(--color-primary);
+}
+
+.reward-rules-form h1 {
+    text-transform: capitalize;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    border-bottom: 4px solid var(--color-primary);
+}
+
+/** bundle **/
+
+.bundle-form-seg {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr;*/
+    grid-gap: 0 1rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+}

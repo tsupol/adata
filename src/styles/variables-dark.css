@@ -1,0 +1,64 @@
+:root[data-theme="dark"] {
+
+    --color-info: #595c64;
+    --color-info-contrast: #ffffff;
+
+    --text-color: #dedede;
+    --text-color-fade: #838383;
+    --bg-body: #1c1c1c;
+    --bg-z1: #252525;
+    --bg-z2: #525252;
+    --bg-above: rgba(255, 255, 255, .025);
+    --border-color: rgba(255, 255, 255, .1);
+    --color-bg-z1: rgba(255, 255, 255, .1);
+    --placeholder-color: var(--text-color-fade);
+    --form-upload-bg: var(--bg-z2);
+
+    --hilight-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+
+    /** form **/
+    --form-bg: #363636;
+    --select-option-border-color: var(--border-color);
+    --select-options-bg: var(--bg-body);
+
+    --popover-bg: #000000;
+    --popover-bg-hover: #222222;
+
+    /* ionic */
+
+    --ion-toolbar-background: black;
+    --ion-background-color: var(--bg-body);
+    --ion-text-color: var(--text-color);
+
+    --nav-bg: #000000;
+    --nav-text-color: #ffffff;
+}
+
+#background-content {
+    --backgrond: var(--bg-body);
+}
+
+ion-tab-bar {
+    --bg: black;
+}
+
+.select-options, .select-options-container {
+    --bg: #333;
+}
+
+.select-option {
+    --color: var(--text-color);
+    --bg: #333;
+}
+
+.select-option:hover {
+    --bg: #555;
+}
+
+.m-select-value {
+    --bg: #333;
+}
+
+.select-option.selected {
+    --bg: #225928;
+}

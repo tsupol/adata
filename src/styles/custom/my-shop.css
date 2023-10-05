@@ -1,0 +1,72 @@
+.text-cp {
+    color: var(--color-campaign);
+}
+
+.text-mp {
+    color: var(--color-point);
+}
+
+.text-cb {
+    color: var(--color-gold);
+}
+
+.order-card {
+    display: grid;
+    background: var(--bg-z1);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.prod-order-list {
+    display: grid;
+    gap: 8px;
+}
+
+.prod-amount-row {
+    display: flex;
+    align-items: center;
+}
+
+.prod-amount-row ion-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.prod-amount-row-title {
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    padding: 0 .5rem;
+}
+
+.prod-amount-row-qty span:first-child {
+    margin-right: 4px;
+}
+
+.currency-emphasis {
+    font-weight: 600;
+}
+
+.shadow-btn-primary {
+    box-shadow: var(--shadow-btn-primary);
+    border-radius: 99px;
+}
+
+.payment-status-btn {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: .5rem;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.payment-status {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: .5rem;
+    overflow: hidden;
+}

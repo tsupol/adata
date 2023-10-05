@@ -1,0 +1,57 @@
+.tab-headers {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.tab-header {
+    flex: 0 0 auto;
+    padding: var(--py, 8px) var(--px, 12px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--h, 60px);
+    background: var(--bg-z1);
+    color: var(--text-color-fade);
+    font-size: var(--font-size, 1rem);
+    border-bottom: 2px solid var(--color-primary);
+    cursor: pointer;
+}
+
+.tab-header.active {
+    color: var(--color-primary);
+    --border-color: var(--color-primary)
+}
+
+.tab-header:not(.active) {
+    --color-primary: transparent;
+}
+
+.tab-header.active::after {
+    background: var(--color-primary);
+}
+
+.tab-header-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+}
+
+/* content */
+
+.tab-content {
+    z-index: 1;
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/** styles **/
+
+.tab-style-1 .tab-header {
+    padding: 16px 32px;
+}

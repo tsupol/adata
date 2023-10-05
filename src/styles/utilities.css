@@ -1,0 +1,16 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hide-scrollbar::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.font-emphasis {
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}

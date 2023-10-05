@@ -1,0 +1,70 @@
+/*.ctx-menu2 {*/
+
+/*}*/
+
+/*.ctx-menu2-item {*/
+/*    display: grid;*/
+/*    grid-template-columns: var(--menu-item-h) 1fr;*/
+/*    min-height: var(--menu-item-h);*/
+/*    border-top: 1px solid var(--border-color);*/
+/*    background: var(--bg);*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.ctx-menu2-label {*/
+/*    padding: 8px 20px;*/
+/*}*/
+
+/*.ctx-menu2-icon {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: var(--menu-item-h);*/
+/*    width: var(--menu-item-h);*/
+/*}*/
+
+/*.ctx-menu2-item:hover {*/
+/*    --bg: rgba(0, 0, 0, .1);*/
+/*}*/
+
+
+.ctx-menu {
+    --min-row-h: 2.5rem;
+    background: var(--bg-z1);
+    border: 1px solid var(--border-color)
+}
+
+.ctx-menu-item {
+    display: grid;
+    grid-template-columns: var(--menu-item-h) 1fr;
+    padding: 0 1rem 0 0;
+    transition: opacity .2s;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ctx-menu-item:last-child {
+    border-bottom: none;
+}
+
+.ctx-menu.no-icon > .ctx-menu-item {
+    grid-template-columns: 0 1fr;
+    padding-left: 1rem;
+}
+
+.ctx-menu-item:hover {
+    opacity: .8;
+}
+
+.ctx-menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--menu-item-h);
+    height: var(--menu-item-h);
+}
+
+.ctx-menu-label {
+    padding: var(--menu-item-p);
+    min-height: var(--menu-item-h);
+}

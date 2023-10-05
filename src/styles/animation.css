@@ -1,0 +1,50 @@
+.anim-zoom-in {
+    transition: .15s;
+    transform: translate3d(0, -3px, 0) scale(.9);
+    opacity: 0;
+}
+
+.anim-zoom-in.animate {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: .15s;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: .15s;
+}
+
+.modal-show {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: .15s;
+}
+
+.modal-hide {
+    opacity: 0;
+    transform: translate3d(0, 1rem, 0);
+    transition: .15s;
+}
+
+.slide-in-left {
+    transform: translate3d(-100%, 0, 0);
+    transition: transform .2s;
+}
+
+.slide-in-left.active {
+    transform: translate3d(0, 0, 0);
+}
+
+.slide-out-left {
+    transform: translate3d(0, 0, 0);
+    transition: transform .2s;
+}
+
+.slide-out-left.active {
+    transform: translate3d(-100%, 0, 0);
+}

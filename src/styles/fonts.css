@@ -1,0 +1,31 @@
+/*------------------------------------------------------------------
+ Font - Sarabun
+-------------------------------------------------------------------*/
+@font-face {
+  font-family: Sarabun;
+  src: url("../../public/assets/fonts/Sarabun/Sarabun-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Sarabun;
+  src: url("../../public/assets/fonts/Sarabun/Sarabun-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Sarabun;
+  src: url("../../public/assets/fonts/Sarabun/Sarabun-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  font-family: var(--ion-font-default);
+}
+
+:root {
+  --ion-font-family: var(--ion-font-default);
+}

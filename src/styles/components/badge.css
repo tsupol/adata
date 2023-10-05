@@ -1,0 +1,12 @@
+.badge {
+    background-color: var(--badge-bg);
+    color: var(--badge-color);
+    border-radius: var(--badge-rounded);
+    padding: var(--badge-p);
+    font-size: var(--badge-font-size);
+    font-weight: var(--badge-font-weight);
+    line-height: 1;
+    min-width: var(--badge-min-w);
+    height: var(--badge-min-w);
+    text-align: center;
+}

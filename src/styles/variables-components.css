@@ -1,0 +1,74 @@
+/* todo - del */
+/*.custom-form {*/
+/*    --border-color: #A0AEC0;*/
+/*    --outline-color: #A0AEC0;*/
+/*    --border-w: 1px;*/
+/*    --outline-w: 0;*/
+/*    --border-radius: 0px;*/
+/*    --bg: transparent;*/
+/*    --color: var(--text-color);*/
+/*    !*--color-primary: var(--color-secondary);*!*/
+/*    --icon-color: #A0AEC0;*/
+/*}*/
+
+/*.custom-form *:focus {*/
+/*    --outline-w: 1px;*/
+/*}*/
+
+/*.checkbox {*/
+/*    --bg: transparent;*/
+/*    --color: var(--text-color);*/
+/*    --border-radius: 8px;*/
+/*    --border: none;*/
+/*    --outline: 1px solid var(--border-color);*/
+/*    --padding: 14px 10px;*/
+/*    --checker-color: transparent;*/
+/*    --checker-border-radius: 4px;*/
+/*    --checker-border: 1px solid var(--color-primary);*/
+/*    --checker-background: transparent;*/
+/*    --checker-width: 24px;*/
+/*    --checker-height: 24px;*/
+/*    --checker-margin: 0 12px 0 0;*/
+/*}*/
+
+/*.checkbox.checked {*/
+/*    --outline: 2px solid var(--color-primary);*/
+/*    --bg: rgba(255, 255, 255, .1);*/
+/*    --checker-color: var(--color-primary-contrast);*/
+/*    --checker-background: var(--color-primary);*/
+/*}*/
+
+/*.checkbox-plain, .checkbox-plain.checked {*/
+/*    --outline: 0;*/
+/*    --bg: none;*/
+/*    --padding: 12px 10px 12px 0;*/
+/*}*/
+
+/*.radio {*/
+/*    --bg: transparent;*/
+/*    --color: var(--text-color);*/
+/*    --border-radius: 8px;*/
+/*    --border: none;*/
+/*    --outline: 1px solid var(--border-color);*/
+/*    --padding: 12px 10px;*/
+/*    --checker-color: transparent;*/
+/*    --checker-border-radius: 99px;*/
+/*    --checker-border: 1px solid var(--color-primary);*/
+/*    --checker-background: #f5f7fa;*/
+/*    --checker-width: 24px;*/
+/*    --checker-height: 24px;*/
+/*    --checker-margin: 0 12px 0 0;*/
+/*}*/
+
+/*.radio.checked {*/
+/*    --outline: 2px solid var(--color-primary);*/
+/*    --bg: var(--bg-z2);*/
+/*    --checker-color: var(--color-primary);*/
+/*    --checker-background: transparent;*/
+/*    --checker-border: 1px solid var(--color-primary);*/
+/*}*/
+
+/*.select-option {*/
+/*    --border: 1px solid var(--border-color);*/
+/*    --padding: 8px 12px;*/
+/*}*/

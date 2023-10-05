@@ -1,0 +1,286 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+
+    /*------------------------------------------------------------------
+     Colors
+    -------------------------------------------------------------------*/
+
+    --color-primary: #229855;
+    --color-primary-hover: #2eb468;
+    --color-primary-fade: #229855;
+    --color-primary-contrast: #fff;
+
+    --color-secondary: #000000;
+    --color-secondary-fade: #383838;
+    --color-secondary-hover: #383838;
+    --color-secondary-contrast: #eeeeee;
+
+    --color-tertiary: #73AFA5;
+    --color-tertiary-hover: #84c2b7;
+    --color-tertiary-contrast: #ffffff;
+
+    --color-danger: #e01b34;
+    --color-danger-hover: #ee2740;
+    --color-danger-bg: rgba(224, 27, 52, 0.15);
+    --color-danger-contrast: #ffffff;
+
+    --color-warning: #ee6e12;
+    --color-warning-hover: #f5761c;
+    --color-warning-bg: rgba(238, 110, 18, 0.13);
+    --color-warning-contrast: #ffffff;
+
+    --color-success: #45ab6e;
+    --color-success-hover: #4eb978;
+    --color-success-bg: rgba(69, 171, 110, 0.11);
+    --color-success-contrast: #ffffff;
+
+    --color-info: #c2c7d5;
+    --color-info-hover: #d0d4e0;
+    --color-info-bg: rgba(86, 101, 112, 0.15);
+    --color-info-contrast: #555;
+
+    --color-light: #f4f5f8;
+    --color-light-contrast: #000000;
+
+    --color-dark: #222428;
+    --color-dark-contrast: #ffffff;
+
+    --color-grayed: #7e7e7e;
+    --color-grayed-bg: rgba(224, 27, 52, 0.15);
+    --color-grayed-contrast: #ffffff;
+
+    --color-medium: #92949c;
+    --color-medium-contrast: #ffffff;
+
+    --color-gold: #a9930a;
+    --color-point: #3cbd84;
+    --color-campaign: #4b70ff;
+
+    /*------------------------------------------------------------------
+     Depth
+    -------------------------------------------------------------------*/
+
+    --bg-body: #f4f4f4;
+    --bg-z1: #ffffff;
+    --bg-z2: #eeeeee;
+    --bg-z3: #e5e5e5;
+
+    /*------------------------------------------------------------------
+     Text and Others
+    -------------------------------------------------------------------*/
+
+    --font-default: Sarabun;
+    --font-light: Sarabun;
+    --font-bold: Sarabun;
+
+    --text-color: #262632;
+    --text-color-fade: #a9a9a9;
+
+    --border-color: rgba(0, 0, 0, .1);
+    --border-w: 1px;
+
+    --shadow-sm: 1px 1px 12px rgba(0, 0, 0, 0.05);
+    --shadow-md: 1px 1px 28px rgba(0, 0, 0, .08);
+    --shadow-md-vivid: 1px 1px 28px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 1px 1px 20px rgba(0, 0, 0, 0.5);
+    --shadow-btn-primary: 1px 1px 20px rgba(252, 140, 60, .7);
+
+    --hilight-shadow:  1px 1px 12px rgba(0, 0, 0, 0.05);
+
+    /*------------------------------------------------------------------
+     Nav and Menu
+    -------------------------------------------------------------------*/
+
+    --nav-h: 50px;
+    --nav-tabs-h: 40px;
+    --nav-bg: #ffffff;
+    --nav-shadow: var(--shadow-sm);
+    --nav-text-color: var(--text-color);
+
+    --nav-side-bg: var(--color-primary-fade);
+    --nav-side-color: var(--color-primary-contrast);
+    --nav-side-w: 250px;
+    --nav-side-item-h: 50px;
+    --nav-side-item-border: 0px solid var(--color-primary-contrast);
+
+    --menu-w: 200px;
+    --menu-item-h: 48px;
+    --menu-item-color: var(--text-color);
+    --menu-item-p: 10px 20px 10px 0;
+    --menu-item-bg: transparent;
+
+    /*------------------------------------------------------------------
+     Modal
+    -------------------------------------------------------------------*/
+
+    --modal-shadow: var(--shadow-md);
+    --modal-bg: var(--bg-z1);
+    --modal-header-bg: transparent;
+    --modal-header-font-weight: 600;
+    --modal-header-color: var(--text-color);
+    --modal-header-border-b: 1px solid var(--border-color);
+    --modal-header-p: 1rem;
+    --modal-footer-bg: transparent;
+    --modal-footer-border-t: 1px solid var(--border-color);
+    --modal-footer-p: 1rem;
+    --modal-content-p: 1rem;
+
+    --backdrop-bg: rgba(0, 0, 0, .5);
+
+    /*------------------------------------------------------------------
+     Form
+    -------------------------------------------------------------------*/
+    --placeholder-color: var(--text-color-fade);
+    --placeholder-font-weight: 600;
+
+    --form-upload-p: 6px;
+    --form-upload-bg: #e0e6ec;
+    --form-upload-border: 1px solid #666;
+    --form-h: 44px;
+    --form-color: var(--text-color);
+    --form-bg: #eff1f5;
+    --form-px: 12px;
+    --form-py: 8px;
+    --form-border-w: 0px;
+    --form-border-color: var(--form-bg);
+    --form-outline-w: 0;
+    --form-outline-color: var(--border-color);
+    --form-border-radius: 10px;
+    --form-focus-outline-w: 1px;
+    --form-focus-outline-color: var(--color-primary);
+    --form-focus-border-color: var(--color-primary);
+
+    --cb-bg: transparent;
+    --cb-color: var(--text-color);
+    --cb-border-radius: 8px;
+    --cb-border: none;
+    --cb-outline: 1px solid var(--border-color);
+    --cb-p: 14px 10px;
+    --cb-checker-color: transparent;
+    --cb-checker-border-radius: 4px;
+    --cb-checker-border: 2px solid var(--color-primary);
+    --cb-checker-bg: transparent;
+    --cb-checker-width: 24px;
+    --cb-checker-height: 24px;
+    --cb-checker-margin: 0 12px 0 0;
+
+    --cb-checker-bg-a: var(--color-primary);
+    --cb-checker-color-a: var(--color-primary-contrast);
+    --cb-checker-outline-a: var(--color-primary);
+
+
+    --rad-bg: transparent;
+    --rad-color: var(--text-color);
+    --rad-border-radius: 8px;
+    --rad-border: none;
+    --rad-outline: 1px solid var(--border-color);
+    --rad-padding: 12px 10px;
+    --rad-checker-color: transparent;
+    --rad-checker-border-radius: 99px;
+    --rad-checker-border: 1px solid var(--color-primary);
+    --rad-checker-background: #f5f7fa;
+    --rad-checker-width: 24px;
+    --rad-checker-height: 24px;
+    --rad-checker-margin: 0 12px 0 0;
+
+    --rad-outline-a: 2px solid var(--color-primary);
+    --rad-bg-a: var(--bg-z2);
+    --rad-checker-color-a: var(--color-primary);
+    --rad-checker-bg-a: transparent;
+    --rad-checker-border-a: 1px solid var(--color-primary);
+
+    --option-p: 10px 12px;
+    --options-bg: var(--bg-z2);
+    --options-border: 1px solid var(--border-color);
+    --options-shadow: var(--shadow-md);
+    --option-bg: var(--bg-z1);
+    --option-hover-bg: var(--bg-z3);
+    --option-hover-color: var(--text-color);
+    --option-selected-bg: var(--bg-z2);
+    --option-selected-color: var(--bg-z2);
+    --option-border: 1px solid var(--border-color);
+    --option-color: var(--text-color);
+
+    --m-select-bg: var(--bg-z1);
+    --m-select-border: 1px solid var(--border-color);
+    --m-select-radius: 8px;
+
+    --tab-select-p: 4px 4px;
+    --tab-select-h: var(--form-h);
+    --tab-select-bg: transparent;
+    --tab-select-color: var(--text-color);
+    --tab-select-border: 1px solid var(--border-color);
+
+    --tab-select-bg-a: var(--color-primary);
+    --tab-select-color-a: var(--color-primary-contrast);
+    --tab-select-border-a: 1px solid var(--color-primary);
+
+    --badge-bg: var(--color-primary);
+    --badge-color: var(--color-primary-contrast);
+    --badge-rounded: 2rem;
+    --badge-p: .125rem .2rem;
+    --badge-min-w: 1rem;
+    --badge-font-size: .6875rem;
+    --badge-font-weight: 700;
+
+    /*------------------------------------------------------------------
+     Card
+    -------------------------------------------------------------------*/
+
+    --card-px: 20px;
+    --card-py: 16px;
+    --card-border: 0px solid var(--color-primary);
+    --card-bg: var(--bg-z1);
+    --card-shadow: var(--shadow-md);
+    --card-border-radius: 12px;
+
+    --card-header-bg: linear-gradient(160deg, #338d5b 0%, #17af59 100%);;
+    --card-header-py: 11px;
+    --card-header-color: var(--color-primary-contrast);
+    --card-header-font-size: 1.25rem;
+    --card-header-font-weight: 600;
+    --card-header-letter-spacing: .05em;
+    --card-header-bb: 0px solid var(--border-color);
+
+    /*------------------------------------------------------------------
+     Notification
+    -------------------------------------------------------------------*/
+
+    --notification-bg: var(--bg-z1);
+
+    --notification-z: 112;
+    --modal-z: 110;
+    --subpage-z: 100;
+
+}
+
+:host {
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-body);
+
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+}
+
+ion-content {
+    --background: var(--bg-body);
+}

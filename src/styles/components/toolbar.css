@@ -1,0 +1,25 @@
+.toolbar {
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.toolbar-content {
+    height: var(--nav-h);
+    background: var(--nav-bg);
+    box-shadow: var(--nav-shadow);
+    color: var(--nav-text-color);
+    display: flex;
+    padding: 0 16px;
+}
+
+.toolbar-tabs {
+    --h: var(--nav-tabs-h);
+    --font-size: 14px;
+    --px: 18px;
+    --py: 4px;
+    box-shadow: var(--shadow-md);
+}
+

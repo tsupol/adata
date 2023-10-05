@@ -1,0 +1,109 @@
+ion-button, .btn {
+    --border-radius: 99px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    --box-shadow: none;
+    --min-h: 44px;
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .025em;
+    min-height: var(--min-h);
+    min-width: var(--min-h);
+}
+
+.btn {
+    padding: var(--padding-top) var(--padding-end) var(--padding-bottom) var(--padding-start);
+    border-radius: var(--border-radius);
+    color: var(--color);
+    background: var(--bg);
+    transition: background-color .1s;
+}
+
+.btn:hover {
+    background: var(--bg-hover);
+}
+
+.button-small, .btn-sm {
+    --padding-top: 8px;
+    --padding-bottom: 9px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    --min-h: 29px;
+    min-height: var(--min-h);
+    font-size: 14px;
+}
+
+.button-large, .bth-lg {
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+    --padding-start: 32px;
+    --padding-end: 32px;
+    --min-h: 56px;
+    font-size: 1.25rem;
+    min-height: var(--min-h);
+}
+
+.button-outline {
+    --padding-bottom: 21px;
+    --padding-start: 30px;
+    --padding-end: 30px;
+}
+
+.button-outline.button-small {
+    --padding-top: 13px;
+    --padding-bottom: 12px;
+    --padding-start: 18px;
+    --padding-end: 18px;
+}
+
+.button-outline.button-large {
+    --padding-top: 23px;
+    --padding-bottom: 23px;
+    --padding-start: 30px;
+    --padding-end: 30px;
+}
+
+.btn-px-0 {
+    --padding-start: 0;
+    --padding-end: 0;
+}
+
+.btn-primary {
+    --bg: var(--color-primary);
+    --bg-hover: var(--color-primary-hover);
+    --color: var(--color-primary-contrast);
+}
+
+.btn-secondary {
+    --bg: var(--color-secondary);
+    --bg-hover: var(--color-secondary-hover);
+    --color: var(--color-secondary-contrast);
+}
+
+.btn-tertiary {
+    --bg: var(--color-tertiary);
+    --bg-hover: var(--color-tertiary-hover);
+    --color: var(--color-tertiary-contrast);
+}
+
+.btn-warning {
+    --bg: var(--color-warning);
+    --bg-hover: var(--color-warning-hover);
+    --color: var(--color-warning-contrast);
+}
+
+.btn-danger {
+    --bg: var(--color-danger);
+    --bg-hover: var(--color-danger-hover);
+    --color: var(--color-danger-contrast);
+}
+
+.btn-success {
+    --bg: var(--color-success);
+    --bg-hover: var(--color-success-hover);
+    --color: var(--color-success-contrast);
+}
+

@@ -1,0 +1,17 @@
+.product-card {
+    --bottom-row-h: 3rem;
+}
+
+.product-card .bottom-row {
+    min-height: var(--bottom-row-h);
+}
+
+.product-card .add-to-cart {
+    min-height: var(--bottom-row-h);
+    width: var(--bottom-row-h);
+    cursor: pointer;
+}
+
+.product-card .add-to-cart:hover {
+    opacity: .8;
+}

@@ -1,0 +1,101 @@
+/*------------------------------------------------------------------
+  Typography
+-------------------------------------------------------------------*/
+@tailwind base;
+
+@layer base {
+
+    *, ::before, ::after {
+        border-color: var(--border-color);
+    }
+
+    h1 {
+        text-transform: capitalize;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: .025em;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* list */
+    ol.bullet-rounded {
+        counter-reset: orderedlist;
+        --bullet-width: 32px;
+    }
+
+    ol.bullet-rounded li {
+        margin: 1rem 0;
+        padding-left: 2.5rem;
+        position: relative;
+    }
+
+    ol.bullet-rounded li::before {
+        counter-increment: orderedlist;
+        content: counter(orderedlist);
+        background-color: var(--color-primary-fade);
+        width: var(--bullet-width);
+        height: var(--bullet-width);
+        line-height: var(--bullet-width);
+        border-radius: 999px;
+        display: inline-block;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: -4px;
+        left: 0;
+    }
+
+    ul.bullet-dot {
+        background-color: var(--color-primary);
+        --bullet-width: 8px;
+        margin-left: 10px;}
+
+
+    ul.bullet-dot li {
+        margin: 1rem 0;
+        padding-left: 1rem;
+        position: relative;
+    }
+
+    ul.bullet-dot li::before {
+        content: '';
+        background-color: var(--color-primary-fade);
+        width: var(--bullet-width);
+        height: var(--bullet-width);
+        line-height: var(--bullet-width);
+        border-radius: 999px;
+        display: inline-block;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: .4rem;
+        left: 0;
+    }
+
+    /*------------------------------------------------------------------
+     Set 1
+    -------------------------------------------------------------------*/
+    .typo-main h2 {
+        color: var(--color-primary);
+        font-weight: 600;
+        margin-bottom: .5rem;
+        letter-spacing: .025rem;
+    }
+
+    .typo-main h2:not(:first-child) {
+        margin-top: 1rem;
+    }
+
+    .typo-main p {
+        margin-bottom: .25rem;
+    }
+}

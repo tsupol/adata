@@ -1,0 +1,4 @@
+.specom {
+    color: pink;
+    border: 2px solid var(--color-primary, #ff00ff);
+}

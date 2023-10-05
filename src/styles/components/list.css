@@ -1,0 +1,33 @@
+.pagi-item {
+    --w: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-z1);
+    min-width: var(--w);
+    height: var(--w);
+    font-size: 14px;
+    cursor: pointer;
+    /*box-shadow: var(--shadow-default);*/
+}
+
+.pagi-item.current {
+    pointer-events: none;
+    background: var(--color-primary);
+    color: var(--color-primary-contrast)
+}
+
+.li-hor-img {
+    width: 60px;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.li-hor-content {
+    padding: 0 8px;
+}
+
+.li-hor-img + .li-hor-content {
+    padding-left: 16px;
+}
